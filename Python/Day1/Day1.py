@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # https://adventofcode.com/2021/day/1
 
 # --- Day 1: Sonar Sweep ---
@@ -83,20 +85,26 @@
 # At this point, you should return to your Advent calendar and try another puzzle.
 
 # If you still want to see it, you can get your puzzle input.
-require 'benchmark'
 
-data = File.open('/home/roh/Projects/AdventOfCode2021/data/Day1.txt').read.split("\n").map(&:to_i)
-length = data.length
+with open('/home/roh/Projects/AdventOfCode2021/data/Day1.txt') as f:
+  lines = f.readlines()
 
-puts Benchmark.measure {
-  # Part 1
-  count = 0
-  0.upto(length-2) { |i| count += 1 if data[i+1] > data[i] }
-  puts "Part 1 - No measurements larger than previous measurement: #{count}"
+def strip(str):
+  return int(str.rstrip())
 
-  # Part 2
-  count = 0
-  0.upto(length-4) { |i| count += 1 if (data[i+3]) > (data[i]) }
-  puts "Part 2 - No measurements larger than previous set of 3: #{count}"
-}
-  
+arr = list(map(strip, lines))
+length = len(arr)
+
+# Part 1
+count = 0
+for i in range(length-1):
+  if arr[i+1] > arr[i]:
+    count += 1
+print("No. of measurements greater than previous: " + str(count))
+
+# Part 2
+count = 0
+for i in range(length-3):
+  if arr[i+3] > arr[i]:
+    count += 1
+print("No. of measurements greater than previous 3: " + str(count))
