@@ -67,9 +67,6 @@
 
 # Use the binary numbers in your diagnostic report to calculate the oxygen generator rating and CO2 scrubber rating, then multiply them together. What is the life support rating of the submarine? (Be sure to represent your answer in decimal, not binary.)
 
-from operator import add 
-from functools import reduce
-
 path = '/home/roh/Projects/AdventOfCode2021/data/Day3.txt'
 
 with open(path) as f:
