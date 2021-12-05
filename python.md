@@ -80,9 +80,29 @@ reduce(<reducer function>, list)
 - `filter()`
 
   `filter(function, list` returns iterable object (can be transformed with `list()`)
-  Learned abotu lambda functions:
+  Learned about lambda functions:
   `lambda x: fn(x)` that are invoked immediately?
 
 - mapping alternative
 
   `[<function(x)> for x in <list>]`
+
+**Day4**
+- `set`
+  creates a `set` from a list.
+
+  can then see if a set is a subset of another
+  `set(a) <= set(b)` # set a a subset of set b
+
+  difference of two sets
+  `set(a) - set(b)`
+
+  *List Comprehension methods*
+
+- `pop()`
+  list method to remove element from list.  include an index to specify which element to remove.  
+
+- slice type method:
+  `<Array>[i:j]` i = index starting, j = index ending
+
+  
