@@ -105,4 +105,8 @@ reduce(<reducer function>, list)
 - slice type method:
   `<Array>[i:j]` i = index starting, j = index ending
 
-  
+**Day5**
+
+- Dictionaries (hashes/objects)
+  {} , can pull `.keys()`, `.values()` as lists.  can `.copy()` to clone.
+
