@@ -53,6 +53,7 @@
   `for line in data:`
 
 **Day 3**
+
 Python has ALOT of libraries.  
 Looking into reduce:
 
@@ -110,3 +111,19 @@ reduce(<reducer function>, list)
 - Dictionaries (hashes/objects)
   {} , can pull `.keys()`, `.values()` as lists.  can `.copy()` to clone.
 
+**Day8**
+
+alot of list methods can be used on strings.
+```
+string = "hello"
+len(string) # => 5
+string[3] # => "l"
+string.index('e') # => 1
+```
+
+`.join()` method to join together a list of characters:
+`"".join(['h', 'e', 'l', 'l', 'o']) # => "hello"`
+
+`.split(<parameter>)` can be used to create a list split by parameter (e.g. " ", ",")
+`list(string)` can also be used to create a list of individual characters.
+watch out with variable names (str renders `str()` useless)...
