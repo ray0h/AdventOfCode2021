@@ -127,3 +127,16 @@ string.index('e') # => 1
 `.split(<parameter>)` can be used to create a list split by parameter (e.g. " ", ",")
 `list(string)` can also be used to create a list of individual characters.
 watch out with variable names (str renders `str()` useless)...
+
+**Day9**
+
+more list methods
+`.sort()` to sort list; can add `reverse=True` as parameter to reverse the sort.
+
+`if <conditional>: <result>` for oneline statements
+
+ternary statement:
+`<result> if <conditional> else <result2>`
+
+list slicing:
+`arr[ind, no of elements]` returns a subset of list.
