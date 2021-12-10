@@ -109,6 +109,9 @@ reduce(<reducer function>, list)
 **Day5**
 
 - Dictionaries (hashes/objects)
+
+  syntax: `{<key>:<value>}`
+  
   {} , can pull `.keys()`, `.values()` as lists.  can `.copy()` to clone.
 
 **Day8**
@@ -140,3 +143,5 @@ ternary statement:
 
 list slicing:
 `arr[ind, no of elements]` returns a subset of list.
+
+**Day10**
