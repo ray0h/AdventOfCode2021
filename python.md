@@ -144,4 +144,21 @@ ternary statement:
 list slicing:
 `arr[ind, no of elements]` returns a subset of list.
 
-**Day10**
+**Day11**
+
+there is no flatten list function native to Python.  function would be: 
+
+```
+def flatten(lst):
+  l = lst.copy()
+  return [item for sublist in l for item in sublist]
+```
+
+which is equivalent to:
+
+```
+array = []
+for sublist in l:
+  for item in sublist:
+    array.append(item)
+```
