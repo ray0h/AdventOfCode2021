@@ -162,3 +162,30 @@ for sublist in l:
   for item in sublist:
     array.append(item)
 ```
+
+**Day12**
+
+Use of Classes
+
+```
+class <Classname>
+  const = "const" # accessible with .const
+  def __init__(self, param) # self can be any name, but this is conventional
+    self.param = param
+
+  def method
+    ...method logic
+```
+
+Calling class instance:
+
+`myInstance = myClass(parmas)`
+
+Importing Class from external file:
+
+```
+import sys
+sys.path.append('.')
+
+from <file> import <class>
+```
