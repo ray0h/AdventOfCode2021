@@ -189,3 +189,10 @@ sys.path.append('.')
 
 from <file> import <class>
 ```
+
+**Day14**
+
+Can use `list` and `set` to get unique values from a list:
+
+`list(set(<my_list>))`, similar to a `#uniq()` method in Ruby
+
